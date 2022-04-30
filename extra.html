@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let Amar={
+    name: 'Amar',
+    location : 'Goa'
+}
+let Akbar={
+    name : 'Akbar',
+    location : 'Mumbai'
+}
+let Anthony={
+    name : 'Anthony',
+    location : 'Kashmir'
+}
+
+function cook(){
+    console.log(this.name +"  Cook");
+}
+function sing(){
+    console.log(this.name +"  Sing");
+}
+function magic(){
+    console.log(this.name +" do Magic");
+}
+
+cook.call(Amar);
+cook.call(Anthony);
+sing.call(Akbar);
+magic.call(Amar);
+
+</script>
+</html>
