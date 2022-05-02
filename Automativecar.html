@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1 id="MOHIT">Automative car</H1>
+</body>
+<script>
+    const modal = {
+        name : "ford eco-sport",
+        modals : 2022,
+        wheels :"Aloy wheels",
+        sportMode :"Yes" 
+        }
+
+        let modal1 = Object.create(modal)
+        this.name = "Tata nexon"
+        // console.log(this.name)
+
+        function newModal(){
+            this.name = "ford eco-sport",
+        this.modal = 2022,
+        this.wheels ="Aloy wheels",
+        this.sportMode ="Yes" 
+        }
+
+      let newModal2 = new newModal()
+        newModal2.modals = 2050;
+        newModal2.wheels = "MRF tyres"
+        console.log(newModal2)
+</script>
+</html>
